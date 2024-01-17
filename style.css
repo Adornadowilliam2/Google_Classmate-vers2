@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    background-image: url(media/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+h1 {
+    color: #fff; /* White text color */
+    text-shadow: 0 0 10px #f00; /* Red text-shadow */
+  }
+  
+  h1::after {
+    content: "AI";
+    position: relative;
+    display: inline-block;
+    animation: neon-glow 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes neon-glow {
+    0% {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #f00, 0 0 30px #f00, 0 0 40px #f00, 0 0 50px #f00, 0 0 60px #f00;
+    }
+    50% {
+      text-shadow: none;
+    }
+    100% {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #f00, 0 0 30px #f00, 0 0 40px #f00, 0 0 50px #f00, 0 0 60px #f00;
+    }
+  }
+
+input{
+    outline-color: cyan;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container img{
+    margin: 20px;
+}
+
+input{
+    width: 1000px;
+    height: 50px;
+}
+
+input[type="text"]{
+    padding-left: 30px;
+    color: black;
+}
+button{
+      border: none;
+}
+.btn button{
+    background-color: #f8f9fa;
+    border: none;
+    padding: 4px;
+    margin: 10px auto;
+    transition: border 1s ease-in-out;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn a{
+    margin: 10px;
+}
+
+.btn button:hover{
+    border: 1px inset black;
+}
+
+.logo button{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+}
+  
+
+@media only screen and (max-width: 600px) {
+    .search-input {
+        width: 200px;
+        height: 25px;
+        font-size: 14px;
+    }
+}
+    
