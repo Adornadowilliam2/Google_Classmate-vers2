@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WilliamAi</title>
-    <link rel="shortcut icon" href="media/logo.ico" type="image/x-icon">
+    <title>Google</title>
+    <link rel="shortcut icon" href="media/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="srcipt.js"></script>
 </head>
@@ -12,18 +12,21 @@
     <div class="container">
         <div class="logo">
             <img src="media/logo.png" alt="">
-            <h1>William</h1>
-            <input type="text" id="searchInput" class="search-input" placeholder="Search.." title="First letter must be uppercase and the rest is lowercase">   
-            <button onclick="search()" class="diamond-button">Search</button>
-            <button id="startButton" class="diamond-button">Start Listening</button>
+            <input type="text" class="search-input" placeholder="Search.." title="First letter must be uppercase and the rest is lowercase">   
+            <button onclick="search()">Search</button>
         </div>
         <div class="btn">
-            <a href="schooltool.html"><button>School Tools</button></a>
-            <a href="Research/index.html"><button>MFI info</button></a>
-        </div>
-        <iframe src="Javascript-calendar/index.html" frameborder="0" width="800px" height="300px" style="margin: auto; display: block; opacity: 0.5;"></iframe>
+            <a href="https://adornadowilliam2.github.io/Andylyn"><button>AndylynBirthday</button></a>
+            <a href="https://adornadowilliam2.github.io/Calendar/"><button>Karla Calendar</button></a>
+        </div>   
     </div>
-    <script src="script.js">
+    <script>
+        function another() {
+            var searchInput = document.getElementById("searchInput").value;
+            // Perform search based on the entered text
+            // You can use the searchInput variable to perform the search operation
+            // For example, you can make an API call or search within the current page content
+        }
     </script>      
 </body>
 </html>
